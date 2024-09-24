@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=q">
+    <title>
+        Forms
+    </title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <form action="">
+        <table>
+            {{form}}
+        </table>
+        {% for field in form %}
+        {{field.label_tag}} <br>
+        {% endfor %}
+        <input type="button" value="Submit">
+    </form>
+</body>
+</html>

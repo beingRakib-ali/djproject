@@ -1,0 +1,17 @@
+ body{
+
+    background-color: cadetblue;
+ }
+ h1{
+    font-size: 30px;
+    font-weight: 600;
+    color: brown;
+ }
+
+ p{
+    direction: ltr;
+    line-height: 1.5;
+    word-spacing: 2px;
+    letter-spacing: 3px;
+
+ }
