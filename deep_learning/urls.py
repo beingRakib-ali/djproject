@@ -6,4 +6,5 @@ from . import views
 
 urlpatterns = [
     path('dl/',views.deep_learning,name='dl'),
+    path('rg/',views.Registration,name='rg'),
 ]

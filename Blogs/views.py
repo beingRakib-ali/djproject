@@ -11,8 +11,9 @@ def showRegistration(request):
     if request.method == 'POST':
         fm = TeacherFormregistration(request.POST)
         if fm.is_valid():
-          print(fm.cleaned_data)
-          print('This Is Post Method')
+          print(fm.cleaned_data['password'])
+          print(fm.cleaned_data['repassword'])
+          
     else:
         fm=TeacherFormregistration()
         print('This is GET Method')
