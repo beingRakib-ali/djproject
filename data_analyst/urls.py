@@ -7,4 +7,5 @@ from . import views
 urlpatterns = [
    
     path('da/',views.data_analyst, name='data'),
+    path('class/',views.DataAnalyst.as_view()),
 ]
