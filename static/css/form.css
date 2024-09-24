@@ -1,0 +1,30 @@
+form{
+    
+    border: 5px solid midnightblue;
+    margin: 10px;
+    padding: 10px;
+}
+
+label{
+    font-size: 30px;
+    color: brown;
+  
+}
+
+input{
+
+    background-color: lightgreen;
+    height: 20px;
+    width: 300px;
+    font-weight: 500;
+  
+
+}
+
+#id_textarea{
+
+    background-color: lightseagreen;
+    font-weight: 500;
+    
+
+}

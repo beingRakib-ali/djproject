@@ -8,7 +8,15 @@ def blog1(request):
     return render(request,'blogs/blogs.html')
 
 def showRegistration(request):
-    fm=TeacherFormregistration()
+    if request.method == 'POST':
+        fm = TeacherFormregistration(request.POST)
+        if fm.is_valid():
+          print(fm.cleaned_data)
+          print('This Is Post Method')
+    else:
+        fm=TeacherFormregistration()
+        print('This is GET Method')
+        
     fm.order_fields(field_order=['frist_name','last_name','email'])
     return render(request,'blogs/form.html',{'form':fm})
     
